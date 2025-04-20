@@ -12,7 +12,8 @@ const SectionTitle = ({
             {subtitle}
           </p>
         )}
-        <h2 className={`text-3xl md:text-4xl lg:text-5xl font-bold  text-transparent bg-clip-text bg-gradient-to-r ${titleGradient}`}>
+        <h2 className={`text-3xl md:text-4xl lg:text-5xl font-bold  text-transparent bg-clip-text bg-gradient-to-r ${titleGradient}`}
+        style={{ fontFamily: '"Playfair Display", serif' }}>
           {title}
         </h2>
       </div>

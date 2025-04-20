@@ -111,7 +111,7 @@ const Stories = () => {
       </section>
 
       {/* More Stories */}
-      <section className="py-20 bg-gradient-to-b from-black to-purple-900/20 relative">
+      {/* <section className="py-20 bg-gradient-to-b from-black to-purple-900/20 relative">
         <GeometricBackground className="opacity-30" />
         
         <div className="container mx-auto px-4 relative z-10">
@@ -152,10 +152,10 @@ const Stories = () => {
             </Button>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Video Stories */}
-      <section className="py-20">
+      {/* <section className="py-20">
         <div className="container mx-auto px-4">
           <SectionTitle 
             title="Video Stories" 
@@ -205,7 +205,7 @@ const Stories = () => {
             </Button>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Share Your Story */}
       <section className="py-20 bg-gradient-to-b from-black to-purple-900/20 relative">
