@@ -452,7 +452,7 @@ const Home = () => {
         <div className="container mx-auto px-4 relative z-10 "  style={{ fontFamily: '"Playfair Display", serif' }}>
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-purple-600 to-orange-500">
-              About Nari-Nexus
+              About NariNexus
             </h1>
             <p className="text-xl text-gray-300 mb-8">
               We’re not waiting for doors to open we’re building our own.
@@ -770,7 +770,7 @@ const Home = () => {
       </section>
 
       {/* Events Section */}
-      <section className="py-20 relative bg-gradient-to-b from-black to-purple-900/20 scroll-fade">
+      {/* <section className="py-20 relative bg-gradient-to-b from-black to-purple-900/20 scroll-fade">
         <SectionTitle title="Upcoming Events" centered={true} />
         <GeometricBackground className="opacity-30" />
 
@@ -856,11 +856,11 @@ const Home = () => {
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
           </div>
-        </div>
+        </div> */}
 
         {/* Testimonials   */}
 
-        <div className="container mx-auto px-4">
+        {/* <div className="container mx-auto px-4">
           <SectionTitle
             title="Testimonial"
             subtitle="Voices of Empowerment"
@@ -896,7 +896,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       <section id="team" className="relative py-20 overflow-hidden">
         <GeometricBackground className="opacity-40" />
