@@ -10,19 +10,16 @@ import {
 } from "lucide-react";
 import { FaInstagram, FaLinkedin, FaGithub } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
-
 import BgBox from "../components/BgBox";
 import Button from "../components/Button";
 import SectionTitle from "../components/SectionTitle";
 import Card from "../components/Card";
 import TestimonialCard from "../components/TestimonialCard";
 import Footer from "../components/Footer";
-
 import GeometricBackground from "../components/GeometricBackground";
 import GeometricBackground2 from "../components/GeometricBackground2";
 import GeometricBackground3 from "../components/GeometricBackground3";
 import HeroHeading from "../components/HeroHeading";
-
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
@@ -30,13 +27,10 @@ gsap.registerPlugin(ScrollTrigger);
 
 const Home = () => {
   const [isVisible, setIsVisible] = useState(false);
-
   useEffect(() => {
     setIsVisible(true);
-
     // Initialize all animations
     initAnimations();
-
     return () => {
       // Clean up ScrollTrigger instances
       ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
@@ -392,11 +386,9 @@ const Home = () => {
                 className="flex flex-wrap gap-4 transform translate-x-4 md:translate-x-18 transition-all duration-500"
                 style={{ fontFamily: '"Roboto", sans-serif' }}
               >
-                <Button to="/programs" size="lg">
-                  Explore Programs
-                  <ArrowRight className="ml-2 h-5 w-5" />
-                </Button>
-                <Button to="/about" variant="secondary" size="lg">
+                <Button href="#programs" size="lg">Explore Programs</Button>
+
+                <Button to="#about" variant="secondary" size="lg">
                   Learn More
                 </Button>
               </div>
@@ -523,7 +515,7 @@ const Home = () => {
          
       </section> */}
 
-      <section className="py-20 relative scroll-fade">
+      <section id= "programs" className="py-20 relative scroll-fade">
         <GeometricBackground2 className="opacity-50" />
         <div className="container mx-auto px-4">
           <SectionTitle title="Our Mission" centered={true} />
