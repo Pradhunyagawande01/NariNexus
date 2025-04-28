@@ -1,4 +1,4 @@
-import { Linkedin, Twitter, Mail, Users, Heart, Globe, Target, TrendingUp, Shield } from 'lucide-react'
+import { Linkedin, Twitter, Mail } from 'lucide-react'
 import SectionTitle from '../components/SectionTitle'
 import Button from '../components/Button'
 import GeometricBackground from '../components/GeometricBackground'
@@ -10,49 +10,73 @@ const Team = () => {
       id: 1,
       name: 'Kritika',
       role: 'CEO',
-      image: '/img/Kritika.jpg'
+      image: '/img/Kritika.jpg',
+      linkedin: '#',
+      twitter: '#',
+      email: '#'
     },
     {
       id: 2,
       name: 'Sujal',
       role: 'Community Manager',
-      image: '/img/Sujal.jpg'
+      image: '/img/Sujal.jpg',
+      linkedin: '#',
+      twitter: '#',
+      email: '#'
     },
     {
       id: 3,
       name: 'Sunidhi',
       role: 'Events Coordinator',
-      image: '/placeholder.svg?height=300&width=300'
+      image: '/placeholder.svg?height=300&width=300',
+      linkedin: '#',
+      twitter: '#',
+      email: '#'
     },
     {
       id: 4,
       name: 'Pradhumnya',
       role: 'Marketing Specialist',
-      image: '/img/Pradhumnya.jpg'
+      image: '/img/Pradhumnya.jpg',
+      linkedin: '#',
+      twitter: '#',
+      email: '#'
     },
     {
       id: 5,
       name: 'Rishu',
       role: 'Curriculum Developer',
-      image: '/img/Rishu.jpg'
+      image: '/img/Rishu.jpg',
+      linkedin: '#',
+      twitter: '#',
+      email: '#'
     },
     {
       id: 6,
       name: 'Pranav',
       role: 'Partnerships Manager',
-      image: '/placeholder.svg?height=300&width=300'
+      image: '/placeholder.svg?height=300&width=300',
+      linkedin: '#',
+      twitter: '#',
+      email: '#'
     },
     {
       id: 7,
       name: 'Ayush',
       role: 'Finance Director',
-      image: '/placeholder.svg?height=300&width=300'
+      image: '/placeholder.svg?height=300&width=300',
+      linkedin: '#',
+      twitter: '#',
+      email: '#'
     },
     {
       id: 8,
       name: 'Akshay',
       role: 'Research Analyst',
-      image: '/placeholder.svg?height=300&width=300'
+      image: '/placeholder.svg?height=300&width=300',
+      linkedin: '#',
+      twitter: '#',
+      email: '#'
     }
   ]
 
@@ -74,8 +98,6 @@ const Team = () => {
         </div>
 
         <div className="container mx-auto px-4">
-           
-          
           <div className="grid md:grid-cols-3 lg:grid-cols-4 gap-8 mt-12">
             {teamMembers.map((member) => (
               <div key={member.id} className="bg-black/40 backdrop-blur-sm border border-white/10 rounded-xl overflow-hidden group hover:border-white/20 transition-all duration-300">
@@ -88,15 +110,27 @@ const Team = () => {
                 </div>
                 <div className="p-4 text-center">
                   <h3 className="text-lg font-bold mb-1">{member.name}</h3>
-                  <p className="text-purple-400 text-sm">{member.role}</p>
+                  <p className="text-purple-400 text-sm mb-4">{member.role}</p>
+
+                  {/* Social Links */}
+                  <div className="flex justify-center gap-4 text-gray-400">
+                    <a href={member.linkedin} target="_blank" rel="noopener noreferrer">
+                      <Linkedin className="w-5 h-5 hover:text-white transition-colors" />
+                    </a>
+                    <a href={member.twitter} target="_blank" rel="noopener noreferrer">
+                      <Twitter className="w-5 h-5 hover:text-white transition-colors" />
+                    </a>
+                    <a href={`mailto:${member.email}`}>
+                      <Mail className="w-5 h-5 hover:text-white transition-colors" />
+                    </a>
+                  </div>
+
                 </div>
               </div>
             ))}
           </div>
         </div>
       </section>
-
-       
     </div>
   )
 }

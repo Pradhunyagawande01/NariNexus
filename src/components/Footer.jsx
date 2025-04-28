@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import { FaInstagram, FaTwitter, FaLinkedin } from 'react-icons/fa';
 import { Facebook, Twitter, Instagram, Linkedin, Mail, Phone, MapPin } from 'lucide-react'
 import Logo from './Logo'
 
@@ -82,13 +83,28 @@ const Footer = () => {
           </div> */}
         {/* </div> */}
         
-        <div className="mt-12 pt-8 border-t border-gray-800 text-center text-gray-400 text-sm" style={{ fontFamily: '"Playfair Display", serif' }}>
-          <p>© {new Date().getFullYear()} Nari-Nexus. All rights reserved.</p>
-          <div className="mt-2 flex justify-center space-x-6">
-            <Link to="/" className="hover:text-white transition-colors">Privacy Policy</Link>
-            <Link to="/" className="hover:text-white transition-colors">Terms of Service</Link>
-          </div>
-        </div>
+        <div className="mt-12 pt-8 border-t border-gray-800 text-gray-400 text-sm" style={{ fontFamily: '"Playfair Display", serif' }}>
+  <div className="flex justify-between items-center">
+    <p className="text-left">© {new Date().getFullYear()} Nari-Nexus. All rights reserved.</p>
+    <div className="flex space-x-6">
+      <a href="https://www.instagram.com/narinexus/" className="hover:text-white transition-colors">
+        <FaInstagram size={20} />
+      </a>
+      <a href="https://x.com/narinexus" className="hover:text-white transition-colors">
+        <FaTwitter size={20} />
+      </a>
+      <a href="https://www.linkedin.com/company/narinexus/" className="hover:text-white transition-colors">
+        <FaLinkedin size={20} />
+      </a>
+    </div>
+  </div>
+  {/* <div className="mt-2 flex justify-start space-x-6">
+    <Link to="/" className="hover:text-white transition-colors">Privacy Policy</Link>
+    <Link to="/" className="hover:text-white transition-colors">Terms of Service</Link>
+  </div> */}
+</div>
+ 
+
        
     </footer>
   )

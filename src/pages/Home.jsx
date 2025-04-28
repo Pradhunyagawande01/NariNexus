@@ -255,7 +255,7 @@ const Home = () => {
       image: "/img/Sujal.jpg",
       socials: {
         // instagram: 'https://instagram.com/kritika',
-        // linkedin: 'https://linkedin.com/in/kritika',
+        linkedin: "https://www.linkedin.com/in/sujal-khade-2823a32a6/",
         github: "https://github.com/codetechie43",
         x: "https://x.com/CodeTechie43?t=s9J0-cmid0UXHVk0lMSx7w&s=09",
       },
@@ -264,13 +264,13 @@ const Home = () => {
       id: 3,
       name: "Sunidhi",
       // role: 'Events Coordinator',
-      image: "/placeholder.svg?height=300&width=300",
+      image: "/img/Sunidhi.jpg",
       socials: {
         instagram:
           "https://www.instagram.com/sunidhi_vj?igsh=MWs1NHY1N3F6bXRibg==",
         linkedin:
           "https://www.linkedin.com/in/sunidhi-haware-797a97323?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-        // github: 'https://github.com/kritika',
+        github: "https://github.com/Sunidhi369",
         x: "https://x.com/Sunidhi_vj?t=2MmYce2G-HyQkYoK8JsySA&s=09",
       },
     },
@@ -334,12 +334,12 @@ const Home = () => {
       id: 8,
       name: "Akshay",
       // role: 'Research Analyst',
-      image: "/placeholder.svg?height=300&width=300",
+      image: "/img/Akshay.jpg",
       socials: {
-        instagram: "https://instagram.com/kritika",
-        linkedin: "https://linkedin.com/in/kritika",
-        github: "https://github.com/kritika",
-        x: "https://twitter.com/kritika",
+        instagram: "https://www.instagram.com/its_gangasagar05",
+        linkedin: "https://www.linkedin.com/in/akshay-gangasagar-67b25b305/",
+        github: "https://github.com/Akkhi05",
+        // x: "https://twitter.com/kritika",
       },
     },
   ];
@@ -386,11 +386,13 @@ const Home = () => {
                 className="flex flex-wrap gap-4 transform translate-x-4 md:translate-x-18 transition-all duration-500"
                 style={{ fontFamily: '"Roboto", sans-serif' }}
               >
-                <Button href="#programs" size="lg">Explore Programs</Button>
-
-                <Button to="#about" variant="secondary" size="lg">
-                  Learn More
+                <Button href="#programs" size="lg">
+                  Explore Programs
                 </Button>
+
+                {/* <Button to="#about" variant="secondary" size="lg">
+                  Learn More
+                </Button> */}
               </div>
             </div>
 
@@ -401,36 +403,36 @@ const Home = () => {
                   : "opacity-0 translate-y-10"
               }`}
             >
-             <div className="relative w-full aspect-square max-w-md mx-auto">
-  {/* Animated Gradient Background */}
-  <div
-    className="absolute inset-0 rounded-full blur-xl opacity-80 z-0"
-    style={{
-      background: "conic-gradient(from 0deg, #ec4899, #a855f7, #f97316, #ec4899)",
-      animation: "spinGradient 10s linear infinite",
-    }}
-  />
+              <div className="relative w-full aspect-square max-w-md mx-auto">
+                {/* Animated Gradient Background */}
+                <div
+                  className="absolute inset-0 rounded-full blur-xl opacity-80 z-0"
+                  style={{
+                    background:
+                      "conic-gradient(from 0deg, #ec4899, #a855f7, #f97316, #ec4899)",
+                    animation: "spinGradient 10s linear infinite",
+                  }}
+                />
 
-  {/* White Inner Circle with Logo */}
-  <div className="absolute inset-4 rounded-full bg-white flex items-center justify-center z-10 shadow-2xl">
-    <img
-      src="/img/logo.png"
-      alt="Centered Logo"
-      className="object-contain rounded-full w-3/4 h-3/4"
-    />
-  </div>
+                {/* White Inner Circle with Logo */}
+                <div className="absolute inset-4 rounded-full bg-white flex items-center justify-center z-10 shadow-2xl">
+                  <img
+                    src="/img/logo.png"
+                    alt="Centered Logo"
+                    className="object-contain rounded-full w-3/4 h-3/4"
+                  />
+                </div>
 
-  {/* Inline Style for Animation */}
-  <style>
-    {`
+                {/* Inline Style for Animation */}
+                <style>
+                  {`
       @keyframes spinGradient {
         0% { transform: rotate(0deg); }
         100% { transform: rotate(360deg); }
       }
     `}
-  </style>
-</div>
-
+                </style>
+              </div>
             </div>
           </div>
         </div>
@@ -441,7 +443,10 @@ const Home = () => {
       <section id="about" className="relative py-20 overflow-hidden">
         <GeometricBackground3 className="opacity-40" />
 
-        <div className="container mx-auto px-4 relative z-10 "  style={{ fontFamily: '"Playfair Display", serif' }}>
+        <div
+          className="container mx-auto px-4 relative z-10 "
+          style={{ fontFamily: '"Playfair Display", serif' }}
+        >
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-purple-600 to-orange-500">
               About NariNexus
@@ -515,15 +520,86 @@ const Home = () => {
          
       </section> */}
 
-      <section id= "programs" className="py-20 relative scroll-fade">
+      {/* Programs Section */}
+      <section
+      
+        className="py-20 relative bg-gradient-to-b from-black to-purple-900/20 scroll-fade"
+      >
+        <GeometricBackground className="opacity-30" />
+
+        <div className="container mx-auto px-4 relative z-10">
+          <div style={{ marginTop: "-20px" }}>
+            <SectionTitle title="What We Provide ?" centered={true} />
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {/* Adding div wrappers with program-card class for animation */}
+            <div className="program-card">
+              <Card
+                title="Leadership Development"
+                description="Training programs to build leadership and confidence in women."
+                icon={Award}
+                gradient="from-pink-500 to-purple-600"
+              />
+            </div>
+
+            <div className="program-card">
+              <Card
+                title="Entrepreneurship"
+                description="Resources, mentorship, and funding opportunities for women entrepreneurs to launch and scale their businesses."
+                icon={Sparkles}
+                gradient="from-purple-600 to-orange-500"
+              />
+            </div>
+
+            <div className="program-card">
+              <Card
+                title="Tech Skills Training"
+                description="Hands-on workshops and courses in coding, digital marketing, and other in-demand tech skills."
+                icon={Lightbulb}
+                gradient="from-orange-500 to-pink-500"
+              />
+            </div>
+
+            {/* <div className="program-card">
+              <Card
+                title="Mentorship Program"
+                description="Connecting experienced professionals with emerging talents for personalized guidance and support."
+                icon={Users}
+                gradient="from-pink-500 to-orange-500"
+              />
+            </div>
+
+            <div className="program-card">
+              <Card
+                title="Networking Events"
+                description="Regular gatherings that facilitate meaningful connections and collaborative opportunities."
+                icon={Calendar}
+                gradient="from-purple-600 to-pink-500"
+              />
+            </div>  
+
+            {/* <div className="program-card">
+              <Card
+                title="Educational Resources"
+                description="Access to a wealth of learning materials, research, and tools for continuous personal and professional growth."
+                icon={BookOpen}
+                gradient="from-orange-500 to-purple-600"
+              />
+            </div> */}
+          </div>
+        </div>
+      </section>
+
+      {/* <section id="programs" className="py-20 relative scroll-fade">
         <GeometricBackground2 className="opacity-50" />
         <div className="container mx-auto px-4">
-          <SectionTitle title="Our Mission" centered={true} />
+          <SectionTitle title="Our Mission" centered={true} /> */}
 
           {/* Programming language logos background */}
-          <div className="absolute inset-0 z-0 overflow-hidden opacity-10">
+          {/* <div className="absolute inset-0 z-0 overflow-hidden opacity-10"> */}
             {/* JavaScript logo */}
-            <div className="absolute top-10 left-20 w-16 h-16">
+            {/* <div className="absolute top-10 left-20 w-16 h-16">
               <svg viewBox="0 0 128 128">
                 <path fill="#F0DB4F" d="M1.408 1.408h125.184v125.185H1.408z" />
                 <path
@@ -531,10 +607,10 @@ const Home = () => {
                   d="M116.347 96.736c-.917-5.711-4.641-10.508-15.672-14.981-3.832-1.761-8.104-3.022-9.377-5.926-.452-1.69-.512-2.642-.226-3.665.821-3.32 4.784-4.355 7.925-3.403 2.023.678 3.938 2.237 5.093 4.724 5.402-3.498 5.391-3.475 9.163-5.879-1.381-2.141-2.118-3.129-3.022-4.045-3.249-3.629-7.676-5.498-14.756-5.355l-3.688.477c-3.534.893-6.902 2.748-8.877 5.235-5.926 6.724-4.236 18.492 2.975 23.335 7.104 5.332 17.54 6.545 18.873 11.531 1.297 6.104-4.486 8.08-10.234 7.378-4.236-.881-6.592-3.034-9.139-6.949-4.688 2.713-4.688 2.713-9.508 5.485 1.143 2.499 2.344 3.63 4.26 5.795 9.068 9.198 31.76 8.746 35.83-5.176.165-.478 1.261-3.666.38-8.581zM69.462 58.943H57.753l-.048 30.272c0 6.438.333 12.34-.714 14.149-1.713 3.558-6.152 3.117-8.175 2.427-2.059-1.012-3.106-2.451-4.319-4.485-.333-.584-.583-1.036-.667-1.071l-9.52 5.83c1.583 3.249 3.915 6.069 6.902 7.901 4.462 2.678 10.459 3.499 16.731 2.059 4.082-1.189 7.604-3.652 9.448-7.401 2.666-4.915 2.094-10.864 2.07-17.444.06-10.735.001-21.468.001-32.237z"
                 />
               </svg>
-            </div>
+            </div> */}
 
             {/* Python logo */}
-            <div className="absolute top-40 right-24 w-20 h-20">
+            {/* <div className="absolute top-40 right-24 w-20 h-20">
               <svg viewBox="0 0 128 128">
                 <linearGradient
                   id="python-original-a"
@@ -571,20 +647,20 @@ const Home = () => {
                   transform="translate(0 10.26)"
                 />
               </svg>
-            </div>
+            </div> */}
 
             {/* Node.js logo */}
-            <div className="absolute bottom-32 left-40 w-16 h-16">
+            {/* <div className="absolute bottom-32 left-40 w-16 h-16">
               <svg viewBox="0 0 128 128">
                 <path
                   fill="#83CD29"
                   d="M112.771 30.334L68.674 4.729c-2.781-1.584-6.402-1.584-9.205 0L14.901 30.334C12.031 31.985 10 35.088 10 38.407v51.142c0 3.319 2.084 6.423 4.954 8.083l11.775 6.688c5.628 2.772 7.617 2.772 10.178 2.772 8.333 0 13.093-5.039 13.093-13.828v-50.49c0-.713-.371-1.774-1.071-1.774h-5.623C42.594 41 41 42.061 41 42.773v50.49c0 3.896-3.524 7.773-10.11 4.48L18.723 90.73c-.424-.23-.723-.693-.723-1.181V38.407c0-.482.555-.966.982-1.213l44.424-25.561c.415-.235 1.025-.235 1.439 0l43.882 25.555c.42.253.272.722.272 1.219v51.142c0 .488.183.963-.232 1.198l-44.086 25.576c-.378.227-.847.227-1.261 0l-11.307-6.749c-.341-.198-.746-.269-1.073-.086-3.146 1.783-3.726 2.02-6.677 3.043-.726.253-1.797.692.41 1.929l14.798 8.754a9.294 9.294 0 004.647 1.246c1.642 0 3.25-.426 4.667-1.246l43.885-25.582c2.87-1.672 4.23-4.764 4.23-8.083V38.407c0-3.319-1.36-6.414-4.229-8.073zM77.91 81.445c-11.726 0-14.309-3.235-15.17-9.066-.1-.628-.633-1.379-1.272-1.379h-5.731c-.709 0-1.279.86-1.279 1.566 0 7.466 4.059 16.512 23.453 16.512 14.039 0 22.088-5.455 22.088-15.109 0-9.572-6.467-12.084-20.082-13.886-13.762-1.819-15.16-2.738-15.16-5.962 0-2.658 1.184-6.203 11.374-6.203 9.105 0 12.461 1.954 13.842 8.091.118.577.645.991 1.24.991h5.754c.354 0 .692-.143.94-.396.24-.272.367-.613.335-.979-.891-10.568-7.912-15.493-22.112-15.493-12.631 0-20.166 5.334-20.166 14.275 0 9.698 7.497 12.378 19.622 13.577 14.505 1.422 15.633 3.542 15.633 6.395 0 4.955-3.978 7.066-13.309 7.066z"
                 />
               </svg>
-            </div>
+            </div> */}
 
             {/* Java logo */}
-            <div className="absolute top-60 left-1/2 w-16 h-16">
+            {/* <div className="absolute top-60 left-1/2 w-16 h-16">
               <svg viewBox="0 0 128 128">
                 <path
                   fill="#0074BD"
@@ -607,10 +683,10 @@ const Home = () => {
                   d="M52.214 126.021c22.476 1.437 57-.8 57.817-11.436 0 0-1.571 4.032-18.577 7.231-19.186 3.612-42.854 3.191-56.887.874 0 .001 2.875 2.381 17.647 3.331z"
                 />
               </svg>
-            </div>
+            </div> */}
 
             {/* Bootstrap logo */}
-            <div className="absolute bottom-20 right-32 w-16 h-16">
+            {/* <div className="absolute bottom-20 right-32 w-16 h-16">
               <svg viewBox="0 0 128 128">
                 <path
                   fill="#5B4282"
@@ -688,167 +764,138 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </section>
-
-      {/* Programs Section */}
-      <section
-        id="programs"
-        className="py-20 relative bg-gradient-to-b from-black to-purple-900/20 scroll-fade"
-      >
-        <GeometricBackground className="opacity-30" />
-
-        <div className="container mx-auto px-4 relative z-10">
-          <div style={{ marginTop: "-20px" }}>
-            <SectionTitle title="What We Provide ?" centered={true} />
-          </div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* Adding div wrappers with program-card class for animation */}
-            <div className="program-card">
-              <Card
-                title="Leadership Development"
-                description="Training programs to build leadership and confidence in women."
-                icon={Award}
-                gradient="from-pink-500 to-purple-600"
-              />
-            </div>
-
-            <div className="program-card">
-              <Card
-                title="Entrepreneurship"
-                description="Resources, mentorship, and funding opportunities for women entrepreneurs to launch and scale their businesses."
-                icon={Sparkles}
-                gradient="from-purple-600 to-orange-500"
-              />
-            </div>
-
-            <div className="program-card">
-              <Card
-                title="Tech Skills Training"
-                description="Hands-on workshops and courses in coding, digital marketing, and other in-demand tech skills."
-                icon={Lightbulb}
-                gradient="from-orange-500 to-pink-500"
-              />
-            </div>
-
-            {/* <div className="program-card">
-              <Card
-                title="Mentorship Program"
-                description="Connecting experienced professionals with emerging talents for personalized guidance and support."
-                icon={Users}
-                gradient="from-pink-500 to-orange-500"
-              />
-            </div>
-
-            <div className="program-card">
-              <Card
-                title="Networking Events"
-                description="Regular gatherings that facilitate meaningful connections and collaborative opportunities."
-                icon={Calendar}
-                gradient="from-purple-600 to-pink-500"
-              />
-            </div>  
-
-            {/* <div className="program-card">
-              <Card
-                title="Educational Resources"
-                description="Access to a wealth of learning materials, research, and tools for continuous personal and professional growth."
-                icon={BookOpen}
-                gradient="from-orange-500 to-purple-600"
-              />
-            </div> */}
-          </div>
-        </div>
-      </section>
+      </section> */}
 
       {/* Events Section */}
-      {/* <section className="py-20 relative bg-gradient-to-b from-black to-purple-900/20 scroll-fade">
+      <section id= 'programs' className="py-20 relative bg-gradient-to-b from-black to-purple-900/20 scroll-fade">
         <SectionTitle title="Upcoming Events" centered={true} />
         <GeometricBackground className="opacity-30" />
 
         <div className="container mx-auto px-4 relative z-10">
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="event-card bg-black/40 backdrop-blur-sm border border-white/10 rounded-xl overflow-hidden group hover:border-white/20 transition-all duration-300">
-              <div className="h-48 bg-gradient-to-r from-pink-500 to-purple-600 relative">
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <Calendar className="w-16 h-16 text-white event-icon" />
-                </div>
-                <div className="absolute bottom-0 left-0 right-0 bg-black/50 backdrop-blur-sm p-3">
-                  <p className="text-sm font-medium">
-                    May 15, 2023 • 10:00 AM - 4:00 PM
-                  </p>
-                </div>
-              </div>
-              <div className="p-6">
-                <h3 className="text-xl font-bold mb-2">Women in Tech Summit</h3>
-                <p className="text-gray-300 mb-4">
-                  Join industry leaders for a day of inspiration, learning, and
-                  networking focused on advancing women in technology.
-                </p>
-                <Button to="/events" variant="secondary" size="sm">
-                  Learn More
-                </Button>
-              </div>
-            </div>
+  {/* First Row */}
+  <div className="grid md:grid-cols-3 lg:grid-cols-3 gap-8 mb-8">
+    <div className="event-card bg-black/40 backdrop-blur-sm border border-white/10 rounded-xl overflow-hidden group hover:border-white/20 transition-all duration-300">
+      <div className="h-48 bg-gradient-to-r from-pink-500 to-purple-600 relative">
+        <div className="absolute inset-0 flex items-center justify-center">
+        {/* <Lightbulb className="w-16 h-16 text-white event-icon" /> */}
+        </div>
+        <div className="absolute bottom-0 left-0 right-0 bg-black/50 backdrop-blur-sm p-3">
+          <p className="text-sm font-medium">10th May - Hack4Maha KickOff Session</p>
+        </div>
+      </div>
+      <div className="p-6">
+        <h3 className="text-xl font-bold mb-2">Get ready to ignite your innovation!</h3>
+        <p className="text-gray-300 mb-4">
+          Get ready for the Hack4Maha Kickoff Session on 10th May! 🚀
+          Know the themes, guidelines, and start your journey towards innovation.
+          Let’s gear up for an exciting hackathon ahead!
+        </p>
+      </div>
+    </div>
 
-            <div className="event-card bg-black/40 backdrop-blur-sm border border-white/10 rounded-xl overflow-hidden group hover:border-white/20 transition-all duration-300">
-              <div className="h-48 bg-gradient-to-r from-purple-600 to-orange-500 relative">
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <Lightbulb className="w-16 h-16 text-white event-icon" />
-                </div>
-                <div className="absolute bottom-0 left-0 right-0 bg-black/50 backdrop-blur-sm p-3">
-                  <p className="text-sm font-medium">
-                    June 8, 2023 • 6:00 PM - 8:30 PM
-                  </p>
-                </div>
-              </div>
-              <div className="p-6">
-                <h3 className="text-xl font-bold mb-2">
-                  Entrepreneurship Workshop
-                </h3>
-                <p className="text-gray-300 mb-4">
-                  A hands-on workshop covering business planning, funding
-                  strategies, and marketing for women entrepreneurs.
-                </p>
-                <Button to="/events" variant="secondary" size="sm">
-                  Learn More
-                </Button>
-              </div>
-            </div>
+    <div className="event-card bg-black/40 backdrop-blur-sm border border-white/10 rounded-xl overflow-hidden group hover:border-white/20 transition-all duration-300">
+      <div className="h-48 bg-gradient-to-r from-purple-600 to-orange-500 relative">
+        <div className="absolute inset-0 flex items-center justify-center">
+        {/* <Users className="w-16 h-16 text-white event-icon" /> */}
+        </div>
+        <div className="absolute bottom-0 left-0 right-0 bg-black/50 backdrop-blur-sm p-3">
+          <p className="text-sm font-medium">16th May - Pixel Art Drawing Contest</p>
+        </div>
+      </div>
+      <div className="p-6">
+        <h3 className="text-xl font-bold mb-2">Dive into the world of creativity and color!</h3>
+        <p className="text-gray-300 mb-4">
+          Dive into the world of creativity with the Pixel Art Drawing Contest on 16th May! 🎨
+          Bring your ideas to life, pixel by pixel, and show us your artistic flair.
+        </p>
+      </div>
+    </div>
 
-            <div className="event-card bg-black/40 backdrop-blur-sm border border-white/10 rounded-xl overflow-hidden group hover:border-white/20 transition-all duration-300">
-              <div className="h-48 bg-gradient-to-r from-orange-500 to-pink-500 relative">
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <Users className="w-16 h-16 text-white event-icon" />
-                </div>
-                <div className="absolute bottom-0 left-0 right-0 bg-black/50 backdrop-blur-sm p-3">
-                  <p className="text-sm font-medium">
-                    July 22, 2023 • 1:00 PM - 5:00 PM
-                  </p>
-                </div>
-              </div>
-              <div className="p-6">
-                <h3 className="text-xl font-bold mb-2">
-                  Mentorship Matchmaking
-                </h3>
-                <p className="text-gray-300 mb-4">
-                  Connect with potential mentors and mentees in this structured
-                  networking event designed to foster meaningful relationships.
-                </p>
-                <Button to="/events" variant="secondary" size="sm">
-                  Learn More
-                </Button>
-              </div>
-            </div>
-          </div>
+    <div className="event-card bg-black/40 backdrop-blur-sm border border-white/10 rounded-xl overflow-hidden group hover:border-white/20 transition-all duration-300">
+      <div className="h-48 bg-gradient-to-r from-orange-500 to-pink-500 relative">
+        <div className="absolute inset-0 flex items-center justify-center">
+        {/* <Users className="w-16 h-16 text-white event-icon" />
+         */}
+         {/* <Users className="w-16 h-16 text-white event-icon" /> */}
+        </div>
+        <div className="absolute bottom-0 left-0 right-0 bg-black/50 backdrop-blur-sm p-3">
+          <p className="text-sm font-medium">17th May - Idea to MVP Session</p>
+        </div>
+      </div>
+      <div className="p-6">
+        <h3 className="text-xl font-bold mb-2">Join us on 17th May for the Idea to MVP Session! 🚀</h3>
+        <p className="text-gray-300 mb-4">
+          Learn how to transform raw ideas into working prototypes, and take your first step towards building real-world solutions.
+        </p>
+      </div>
+    </div>
+  </div>
 
-          <div className="text-center mt-12 events-cta">
-            <Button to="/" size="lg">
+  {/* Second Row */}
+  <div className="grid md:grid-cols-3 lg:grid-cols-3 gap-8">
+    <div className="event-card bg-black/40 backdrop-blur-sm border border-white/10 rounded-xl overflow-hidden group hover:border-white/20 transition-all duration-300">
+    <div className="h-48 bg-gradient-to-r from-orange-500 to-pink-500 relative">
+        <div className="absolute inset-0 flex items-center justify-center">
+          {/* <Calendar className="w-16 h-16 text-white event-icon" /> */}
+        </div>
+        <div className="absolute bottom-0 left-0 right-0 bg-black/50 backdrop-blur-sm p-3">
+          <p className="text-sm font-medium">23rd May - Scribble Gaming Night
+</p>
+        </div>
+      </div>
+      <div className="p-6">
+        <h3 className="text-xl font-bold mb-2">Scribble Gaming Night</h3>
+        <p className="text-gray-300 mb-4">
+        Join us on 23rd May for a thrilling evening of fun and friendly competition at Scribble Gaming Night! Battle it out in exciting games, showcase your skills, and connect with fellow gaming enthusiasts. Don’t miss out on the fun! 
+        </p>
+      </div>
+    </div>
+
+    <div className="event-card bg-black/40 backdrop-blur-sm border border-white/10 rounded-xl overflow-hidden group hover:border-white/20 transition-all duration-300">
+    <div className="h-48 bg-gradient-to-r from-orange-500 to-pink-500 relative">
+        <div className="absolute inset-0 flex items-center justify-center">
+          {/* <Lightbulb className="w-16 h-16 text-white event-icon" /> */}
+        </div>
+        <div className="absolute bottom-0 left-0 right-0 bg-black/50 backdrop-blur-sm p-3">
+          <p className="text-sm font-medium">Hack4Brahma KickOff Session</p>
+        </div>
+      </div>
+      <div className="p-6">
+        <h3 className="text-xl font-bold mb-2">Get ready to ignite your innovation!</h3>
+        <p className="text-gray-300 mb-4">
+        Get ready to kickstart your journey at Hack4Brahma on 24th May! Join us for an inspiring session to begin an exciting hackathon adventure. 
+        </p>
+      </div>
+    </div>
+
+    {/* <div className="event-card bg-black/40 backdrop-blur-sm border border-white/10 rounded-xl overflow-hidden group hover:border-white/20 transition-all duration-300">
+      <div className="h-48 bg-gradient-to-r from-yellow-500 to-red-500 relative">
+        <div className="absolute inset-0 flex items-center justify-center">
+          <Users className="w-16 h-16 text-white event-icon" />
+        </div>
+        <div className="absolute bottom-0 left-0 right-0 bg-black/50 backdrop-blur-sm p-3">
+          <p className="text-sm font-medium">22nd May - Closing Ceremony</p>
+        </div>
+      </div>
+      <div className="p-6">
+        <h3 className="text-xl font-bold mb-2">Celebrate the journey!</h3>
+        <p className="text-gray-300 mb-4">
+          Join us for the Closing Ceremony on 22nd May. Let's celebrate the amazing journey and achievements together! 🎉
+        </p>
+      </div>
+    </div> */}
+  </div>
+ 
+
+          
+
+          {/* <div className="text-center mt-12 events-cta">
+            <Button to="/programs" size="lg">
               View All Events
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
-          </div>
-        </div> */}
+          </div> */}
+        </div>
 
         {/* Testimonials   */}
 
@@ -887,15 +934,18 @@ const Home = () => {
               />
             </div>
           </div>
-        </div>
-      </section> */}
+        </div>*/}
+      </section>  
 
       <section id="team" className="relative py-20 overflow-hidden">
         <GeometricBackground className="opacity-40" />
 
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-purple-600 to-orange-500"  style={{ fontFamily: '"Playfair Display", serif' }}>
+            <h1
+              className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-purple-600 to-orange-500"
+              style={{ fontFamily: '"Playfair Display", serif' }}
+            >
               Our Team
             </h1>
             <p className="text-xl text-gray-300 mb-8">
@@ -906,25 +956,35 @@ const Home = () => {
         </div>
 
         <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-3 lg:grid-cols-4 gap-8 mt-12"  style={{ fontFamily: '"Playfair Display", serif' }}>
+          <div
+            className="grid md:grid-cols-3 lg:grid-cols-4 gap-8 mt-12"
+            style={{ fontFamily: '"Playfair Display", serif' }}
+          >
             {teamMembers.map((member) => (
               <div
                 key={member.id}
-                className="bg-black/40 backdrop-blur-sm border border-white/10 rounded-xl overflow-hidden group hover:border-white/20 transition-all duration-300"
+                className="relative bg-transperent bg-opacity-10 backdrop-blur-lg border border-white/20 rounded-2xl overflow-hidden group transition-all duration-300 shadow-lg"
               >
-                <div className="aspect-square overflow-hidden">
-                  <img
-                    src={member.image || "/placeholder.svg"}
-                    alt={member.name}
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                  />
-                </div>
-                <div className="p-4 text-center">
-                  <h3 className="text-lg font-bold mb-1">{member.name}</h3>
-                  <p className="text-purple-400 text-sm">{member.role}</p>
+                <div className="flex flex-col items-center p-8">
+                  {/* Circle frame */}
+                  <div className="relative w-48 h-48 rounded-full bg-[#a91fb07c] flex items-center justify-center mb-8 shadow-lg">
+                    <img
+                      src={member.image || "/placeholder.svg"}
+                      alt={member.name}
+                      className="w-44 h-44 rounded-full object-cover"
+                    />
+                  </div>
 
-                  {/* ✅ Social Icons must be inside this scope */}
-                  <div className="flex justify-center gap-4 mt-3 text-white text-xl">
+                  {/* Member Name & Role */}
+                  <h3 className="text-2xl font-bold text-center text-white">
+                    {member.name}
+                  </h3>
+                  <p className="text-md text-center text-gray-200 mt-2">
+                    {member.role}
+                  </p>
+
+                  {/* Socials */}
+                  <div className="flex justify-center gap-5 mt-5 text-white text-2xl">
                     {member.socials.instagram && (
                       <a
                         href={member.socials.instagram}
@@ -977,7 +1037,10 @@ const Home = () => {
             <div className="absolute -top-10 -right-10 w-40 h-40 bg-purple-600/20 rotate-45"></div>
             <div className="absolute -bottom-10 -left-10 w-40 h-40 bg-pink-500/20 rotate-12"></div>
 
-            <h2 className="text-3xl md:text-4xl font-bold mb-6 relative z-10" style={{ fontFamily: '"Playfair Display", serif' }}>
+            <h2
+              className="text-3xl md:text-4xl font-bold mb-6 relative z-10"
+              style={{ fontFamily: '"Playfair Display", serif' }}
+            >
               Join Our Community Today
             </h2>
             <p className="text-xl text-gray-300 mb-8 relative z-10">
@@ -985,13 +1048,17 @@ const Home = () => {
               part of a movement that's changing the world.
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-4 justify-center relative z-10" style={{ fontFamily: '"Playfair Display", serif' }}>
+            <div
+              className="flex flex-col sm:flex-row gap-4 justify-center relative z-10"
+              style={{ fontFamily: '"Playfair Display", serif' }}
+            >
               <Button to="/Contact" size="xl">
                 Get Started
               </Button>
-              <Button to="#programs" size="xl">
-                Programs
-              </Button>
+              <Button as="a" href="#programs" size="xl">
+  Events
+</Button>
+
             </div>
           </div>
         </div>

@@ -8,7 +8,7 @@ const Programs = () => {
   return (
     <div className="">
       {/* Hero Section */}
-      {/* <section className="relative py-20 overflow-hidden">
+      <section className="relative py-20 overflow-hidden">
         <GeometricBackground className="opacity-40" />
         
         <div className="container mx-auto px-4 relative z-10">
@@ -21,7 +21,7 @@ const Programs = () => {
             </p>
           </div>
         </div>
-      </section> */}
+      </section>
 
       {/* Leadership Programs */}
       {/* <section className="py-20">
@@ -231,9 +231,15 @@ const Programs = () => {
         </div>
       </section> */}
 
+
+      
+
       {/* All Programs */}
       <section className="py-20 bg-gradient-to-b from-black to-purple-900/20 relative">
         <GeometricBackground className="opacity-30" />
+
+
+        
         
         <div className="container mx-auto mb-10 px-4 relative z-10">
           <SectionTitle 
