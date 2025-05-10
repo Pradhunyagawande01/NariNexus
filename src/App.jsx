@@ -1,34 +1,56 @@
-import { Routes, Route } from 'react-router-dom'
-import Navbar from './components/Navbar'
-import Footer from './components/Footer'
-import Home from './pages/Home'
-import About from './pages/About'
-import Programs from './pages/Programs'
-import Events from './pages/Events'
-import Resources from './pages/Resources'
-import Stories from './pages/Stories'
-import Contact from './pages/Contact'
-import Team from './pages/Team'
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
+import Home from './pages/Home';
+import About from './pages/About';
+import Programs from './pages/Programs';
+import Events from './pages/Events';
+import Resources from './pages/Resources';
+import Stories from './pages/Stories';
+import Contact from './pages/Contact';
+import Team from './pages/Team';
+import Upcoming from './pages/Upcoming';
+// import Si from './pages/Si'
 
 function App() {
   return (
-    <div className="min-h-screen flex flex-col bg-black text-white">
+    <div className="min-h-screen flex flex-col bg-black text-white scroll-smooth overflow-x-hidden">
       <Navbar />
-      <div className="flex-grow">
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/programs" element={<Programs />} />
-          <Route path="/events" element={<Events />} />
-          <Route path="/resources" element={<Resources />} />
-          <Route path="/stories" element={<Stories />} />
-          <Route path="/team" element={<Team />} />
-          <Route path="/contact" element={<Contact />} />
-        </Routes>
-      </div>
- 
+      <main className="flex-grow">
+        <section id="home" >
+          <Home />
+        </section>
+        <section id="about" >
+          <About />
+        </section>
+        {/* <section id="si" >
+          <Si />
+        </section> */}
+        <section id="programs" >
+          <Programs />
+        </section>
+        <section id="upcoming" >
+          <Upcoming />
+        </section>
+           {/* <section id="events" className="py-0">
+          <Events />
+        </section> */}
+        {/* <section id="resources" className="py-0">
+          <Resources />
+        </section>
+        <section id="stories" className="py-0">
+          <Stories />
+        </section>   */}
+        <section id="team" >
+          <Team />
+        </section>
+        <section   className="py-0">
+          <Contact />
+        </section>
+      </main>
+      
+      <Footer />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
