@@ -2,13 +2,14 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Home from './pages/Home';
 import About from './pages/About';
-import Programs from './pages/Programs';
-import Events from './pages/Events';
-import Resources from './pages/Resources';
-import Stories from './pages/Stories';
 import Contact from './pages/Contact';
 import Team from './pages/Team';
 import Upcoming from './pages/Upcoming';
+import Venue from './pages/Venue';
+import Programs from './pages/Programs';
+// import Events from './pages/Events';
+// import Resources from './pages/Resources';
+// import Stories from './pages/Stories';
 // import Si from './pages/Si'
 
 function App() {
@@ -28,6 +29,10 @@ function App() {
         <section id="programs" >
           <Programs />
         </section>
+          {/* <section id="venue" >
+          <Venue />
+        </section> */}
+
         <section id="upcoming" >
           <Upcoming />
         </section>
