@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import { Calendar, Lightbulb, Target, Sparkles, BookOpen, Globe, MapPin, Clock, User, ChevronRight } from "lucide-react";
+import Venue from "./Venue";
 
 // Component for section titles (using inline definition since the import isn't available in this context)
 const SectionTitle = ({ title, centered }) => (
@@ -59,8 +60,21 @@ const Upcoming = () => {
       tags: ["Gaming", "Social", "Fun"],
       registerLink: "https://lu.ma/8cai0u6z"
     },
-    {
+     {
       id: 4,
+      title: "Strengh in Connection, Progress in Innovation.",
+      date: "24rd May 2025",
+      // time: "7:00 PM - 10:00 PM",
+      location: "Fireblaze AI school ,Nandanwan ,Nagpur",
+      desc: " Join us for an evening of networking and collaboration.",
+      icon: <Target className="w-8 h-8" />,
+      colors: "from-orange-500 to-pink-500",
+      // capacity: "78/100 Registered",
+      tags: ["Innovation", "Social", "Fun"],
+      registerLink: "https://lu.ma/j732hy9b"
+    },
+    {
+      id: 5,
       title: "Kick-Off (Hack4Brahma)",
       date: "25th May 2025",
       // time: "9:00 AM - 11:00 AM",
@@ -73,7 +87,7 @@ const Upcoming = () => {
       registerLink: ""
     },
     {
-      id: 5,
+      id: 6,
       title: "Women Who Code, Lead & Inspire",
       date: "7th June 2025",
       time: "1:00 PM - 5:00 PM",
@@ -86,7 +100,7 @@ const Upcoming = () => {
       registerLink: ""
     },
     {
-      id: 6,
+      id: 7,
       title: "Free Fire Tournament",
       date: "13th June 2025",
       time: "6:00 PM - 9:00 PM",
@@ -128,6 +142,8 @@ const Upcoming = () => {
             <span className="block mt-2 text-purple-300">Register now as spots are limited!</span>
           </p>
         </div>
+
+        <Venue />
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {events.map((event, idx) => (
