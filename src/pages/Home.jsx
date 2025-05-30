@@ -121,7 +121,7 @@ const Home = () => {
             >
              <h1 className="hero-title text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6 ml-4 md:ml-10">
   <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-purple-600 to-orange-500">
-    Empowering Women,
+    Empowering Individuals,
   </span>
   <br />
   Inspiring Futures
