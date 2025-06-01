@@ -1,6 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
 import { Calendar, Lightbulb, Target, Sparkles, BookOpen, Globe, MapPin, Clock, User, ChevronRight } from "lucide-react";
-import Venue from "./Venue";
 
 // Component for section titles (using inline definition since the import isn't available in this context)
 const SectionTitle = ({ title, centered }) => (
@@ -39,7 +38,7 @@ const Upcoming = () => {
       title: "Idea to MVP Workshop",
       date: "17th May 2025",
       // time: "10:00 AM - 4:00 PM",
-      location: "Virtual Event",
+      location: "Innovation Hub, Floor 3",
       desc: "Learn how to transform your ideas into viable products with expert guidance.",
       icon: <Lightbulb className="w-8 h-8" />,
       colors: "from-purple-600 to-blue-500",
@@ -60,26 +59,13 @@ const Upcoming = () => {
       tags: ["Gaming", "Social", "Fun"],
       registerLink: "https://lu.ma/8cai0u6z"
     },
-     {
-      id: 4,
-      title: "Strengh in Connection, Progress in Innovation.",
-      date: "24rd May 2025",
-      // time: "7:00 PM - 10:00 PM",
-      location: "Fireblaze AI school ,Nandanwan ,Nagpur",
-      desc: " Join us for an evening of networking and collaboration.",
-      icon: <Target className="w-8 h-8" />,
-      colors: "from-orange-500 to-pink-500",
-      // capacity: "78/100 Registered",
-      tags: ["Innovation", "Social", "Fun"],
-      registerLink: "https://lu.ma/j732hy9b"
-    },
     {
-      id: 5,
-      title: "Kick-Off (Hack4Brahma)",
+      id: 4,
+      title: "Summer Hackathon Kick-Off",
       date: "25th May 2025",
       // time: "9:00 AM - 11:00 AM",
-      location: "Virtual Event",
-      desc: "Launch of our annual hackathon with exciting challenges and prizes.",
+      location: "Main Auditorium",
+      desc: "Launch of our annual summer hackathon with exciting challenges and prizes.",
       icon: <Sparkles className="w-8 h-8" />,
       colors: "from-blue-500 to-cyan-400",
       // capacity: "156/200 Registered",
@@ -87,11 +73,11 @@ const Upcoming = () => {
       registerLink: ""
     },
     {
-      id: 6,
+      id: 5,
       title: "Women Who Code, Lead & Inspire",
       date: "7th June 2025",
       time: "1:00 PM - 5:00 PM",
-      location: "Coming Soon",
+      location: "Conference Center, Room B",
       desc: "A networking and mentorship event celebrating women in technology.",
       icon: <BookOpen className="w-8 h-8" />,
       colors: "from-purple-600 to-pink-500",
@@ -100,7 +86,7 @@ const Upcoming = () => {
       registerLink: ""
     },
     {
-      id: 7,
+      id: 6,
       title: "Free Fire Tournament",
       date: "13th June 2025",
       time: "6:00 PM - 9:00 PM",
@@ -143,8 +129,6 @@ const Upcoming = () => {
           </p>
         </div>
 
-        <Venue />
-
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {events.map((event, idx) => (
             <div
@@ -184,17 +168,17 @@ const Upcoming = () => {
                     <Calendar className="w-4 h-4 mr-2" />
                     <span>{event.date}</span>
                   </div>
-                  {/* <div className="flex items-center text-sm text-gray-400">
+                  <div className="flex items-center text-sm text-gray-400">
                     <Clock className="w-4 h-4 mr-2" />
                     <span>{event.time}</span>
-                  </div> */}
+                  </div>
                   <div className="flex items-center text-sm text-gray-400">
                     <MapPin className="w-4 h-4 mr-2" />
                     <span>{event.location}</span>
                   </div>
                 </div>
                 
-              
+                {/* Tags */}
                 <div className="flex flex-wrap gap-2 mb-6">
                   {event.tags.map((tag, tagIdx) => (
                     <span 
@@ -206,7 +190,7 @@ const Upcoming = () => {
                   ))}
                 </div>
                 
-              
+                {/* Register button */}
                 <button 
                   onClick={() => handleRegister(event.id, event.registerLink)}
                   className={`w-full flex items-center justify-center gap-2 py-3 px-4 rounded-lg font-medium transition-all duration-300 bg-gradient-to-r ${event.colors} opacity-90 hover:opacity-100 transform hover:translate-y-[-2px] hover:shadow-lg`}
