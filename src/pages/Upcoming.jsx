@@ -61,32 +61,19 @@ const Upcoming = () => {
     },
     {
       id: 4,
-      title: "Summer Hackathon Kick-Off",
-      date: "25th May 2025",
-      // time: "9:00 AM - 11:00 AM",
-      location: "Main Auditorium",
-      desc: "Launch of our annual summer hackathon with exciting challenges and prizes.",
-      icon: <Sparkles className="w-8 h-8" />,
-      colors: "from-blue-500 to-cyan-400",
-      // capacity: "156/200 Registered",
-      tags: ["Hackathon", "Coding", "Innovation"],
-      registerLink: ""
-    },
-    {
-      id: 5,
       title: "Women Who Code, Lead & Inspire",
       date: "7th June 2025",
-      time: "1:00 PM - 5:00 PM",
-      location: "Conference Center, Room B",
+      time: "6:00 PM - 8:00 PM ",
+      location: "Virtual",
       desc: "A networking and mentorship event celebrating women in technology.",
       icon: <BookOpen className="w-8 h-8" />,
       colors: "from-purple-600 to-pink-500",
       // capacity: "85/100 Registered",
       tags: ["Diversity", "Networking", "Career"],
-      registerLink: ""
+      registerLink: "https://lu.ma/mggm2eot"
     },
     {
-      id: 6,
+      id: 5,
       title: "Free Fire Tournament",
       date: "13th June 2025",
       time: "6:00 PM - 9:00 PM",
