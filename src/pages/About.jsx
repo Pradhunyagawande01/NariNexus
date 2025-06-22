@@ -186,11 +186,11 @@ const About = () => {
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div ref={storyRef}>
-              <SectionTitle
+              {/* <SectionTitle
                 title="Our Story"
                 titleGradient="from-pink-500 to-purple-600"
                 className="ml-4 md:ml-18"
-              />
+              /> */}
 
               <p className="text-gray-300 mb-6 ml-6 md:ml-10">
                 NariNexus is a vibrant community initiative dedicated to

@@ -119,13 +119,17 @@ const Home = () => {
               className="transition-all duration-1000"
               style={{ fontFamily: '"Playfair Display", serif' }}
             >
-             <h1 className="hero-title text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6 ml-4 md:ml-10">
+            <h1 className="hero-title text-2xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6 ml-4 md:ml-10 whitespace-nowrap">
   <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-purple-600 to-orange-500">
     Empowering Individuals,
   </span>
-  <br />
+   <br />
+   <span className="text-white">
   Inspiring Futures
+</span>
+
 </h1>
+
 
 
               <div className="hero-subtitle ">
