@@ -179,6 +179,18 @@ const Team = () => {
         // x: "https://twitter.com/kritika",
       },
     },
+    {
+      id: 8,
+      name: "Vaibhavi",
+      // role: 'Research Analyst',
+      image: "/img/Vaibhavi2.jpg",
+      socials: {
+        instagram: "https://www.instagram.com/",
+        linkedin: "https://www.linkedin.com/in/vaibhavi-mangrulkar-7b0793285",
+        github: "https://github.com/Vaibhavi-Mangrulkar",
+        // x: "https://twitter.com/kritika",
+      },
+    },
   ];
 
   return (
