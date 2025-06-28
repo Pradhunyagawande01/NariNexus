@@ -278,7 +278,7 @@ const Programs = () => {
             {/* Header */}
             <div className="relative h-60 bg-gradient-to-r from-purple-600 to-pink-500 p-8 flex items-end">
               <h3 className="text-3xl font-extrabold text-white">
-                Let's Talk Open Source And Communities
+                 Code And Connect , Open Source Communty Power
               </h3>
             </div>
 
@@ -288,14 +288,13 @@ const Programs = () => {
               <div className="flex flex-wrap items-center text-sm text-gray-400 gap-6">
                 <span className="flex items-center">
                   <Calendar className="mr-2 h-4 w-4" />
-                  June 28, 2025
+                  June 29, 2025
                 </span>
               </div>
 
               {/* Description */}
               <p className="text-gray-300 text-base leading-relaxed">
-                Join us for an inspiring double session with Patel Sir and Ali
-                Musthafa Sir exploring open source contribution, community, and
+                Join us for an inspiring double session with Harsh Sir and Tejas Nasre Sir exploring open source contribution, community, and
                 the power of social growth.
               </p>
 
@@ -309,18 +308,18 @@ const Programs = () => {
                   {/* Speaker 1 */}
                   <div className="bg-black/30 rounded-xl p-6 text-center flex flex-col items-center w-full max-w-xs">
                     <img
-                      src="/img/Ali.jpg"
+                      src="/img/Harshbijo.png"
                       alt="Ali Musthafa"
                       className="w-40 h-40 sm:w-48 sm:h-48 rounded-full object-cover border-4 border-purple-600 shadow-lg mb-4"
                     />
                     <h5 className="text-white text-lg font-semibold">
-                      Ali Musthafa
+                      Harsh vardhan Bajoria
                     </h5>
                     <p className="text-gray-400 text-sm mb-2">
-                      Senior Dev Advocate At Pieces
+                       GCE, PRoduct Manager at Unstop
                     </p>
                     <a
-                      href="https://www.linkedin.com/in/ialimustufa?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                      href="https://www.linkedin.com/in/harshavardhan-bajoria/"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-purple-400 hover:text-purple-300 text-xl mt-2"
@@ -332,18 +331,18 @@ const Programs = () => {
                   {/* Speaker 2 */}
                   <div className="bg-black/30 rounded-xl p-6 text-center flex flex-col items-center w-full max-w-xs">
                     <img
-                      src="/img/Patel.jpg"
+                      src="/img/Tejas.png"
                       alt="Patel Muhammad"
                       className="w-40 h-40 sm:w-48 sm:h-48 rounded-full object-cover border-4 border-purple-600 shadow-lg mb-4"
                     />
                     <h5 className="text-white text-lg font-semibold">
-                      Patel Muhammad
+                      Tejas Nasre
                     </h5>
                     <p className="text-gray-400 text-sm mb-2">
-                      GSoC @2023, Fellowship @Keploy
+                      Founder Nextmeet , AI-ML Engineer
                     </p>
                     <a
-                      href="https://www.linkedin.com/in/patel-muhammad?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                      href=" https://www.linkedin.com/in/tejasnasre/"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-purple-400 hover:text-purple-300 text-xl mt-2"
@@ -357,7 +356,7 @@ const Programs = () => {
               {/* Register Button */}
   <div className="flex justify-center mt-10">
     <a
-      href="https://lu.ma/sglu2w7i"
+      href="https://lu.ma/qnomnarq"
       target="_blank"
       rel="noopener noreferrer"
       className="bg-purple-600 text-white px-6 py-3 rounded-full font-semibold text-lg hover:bg-purple-700 transition"

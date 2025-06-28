@@ -183,7 +183,7 @@ const Team = () => {
       id: 8,
       name: "Vaibhavi",
       // role: 'Research Analyst',
-      image: "/img/Vaibhavi2.jpg",
+      image: "/img/Vaibhavi.JPG",
       socials: {
         instagram: "https://www.instagram.com/",
         linkedin: "https://www.linkedin.com/in/vaibhavi-mangrulkar-7b0793285",
