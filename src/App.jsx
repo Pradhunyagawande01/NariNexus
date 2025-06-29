@@ -26,9 +26,9 @@ function App() {
         {/* <section id="si" >
           <Si />
         </section> */}
-        <section id="programs" >
+        {/* <section id="programs" >
           <Programs />
-        </section>
+        </section> */}
           {/* <section id="venue" >
           <Venue />
         </section> */}
